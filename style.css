@@ -1,0 +1,120 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul,li{
+	list-style: none;
+}
+.box{
+	width: 1200px;
+	height: 382px;
+	border: 1px solid red;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.atop{
+	height: 20px;
+	margin: 0 auto;
+	background: #ccc;
+	position: relative;
+	overflow: hidden;
+}
+.message{
+	overflow: hidden;
+	float: left;
+	position: absolute;
+}
+#message1{
+	background-color: #ccc;
+	width: 360px;
+	height: 20px;
+	z-index: 2;
+}
+#message1>img{
+	position: absolute;
+	top: 1.5px;
+	right: 0px;
+	z-index: 2;
+}
+#message2{
+	line-height: 20px;
+	font-size: 12px;
+	color: red;
+	left: 1380px;
+	z-index: 1;
+}
+#message3{
+	right: 0px;
+	width: 340px;
+	height: 20px;
+	background-color: #ccc; 
+	z-index: 2;	
+}
+.slider{
+	width: 8400px;
+	position: absolute;
+	left: -1200px;
+}
+.slide{
+	width: 1200px;
+	overflow: hidden;
+	float: left;
+}
+.box>span{
+	display: block;
+	width: 30px;
+	height: 50px;
+	text-align: center;
+	cursor: pointer;   //鼠标箭头呈手状
+	color: ;
+	top: 175px;
+	line-height: 50px;
+	background: rgb(255,0,0);
+	font-size: 30px;
+	position: absolute;
+	opacity: 0;  //完全透明
+}
+#left{
+/*	text-align: center;
+	line-height: 50px;
+	width: 20px;
+	height: 50px;
+	color: white;
+	background-color: red; 
+	position: absolute;*/
+	left: 30px;
+/*	top: 155px;
+	display: none;*/
+}
+#right{
+/*	text-align: center;
+	line-height: 50px;
+	width: 20px;
+	height: 50px;
+	color: white;
+	background-color: red; 
+	position: absolute;*/
+	right: 30px;
+/*	top: 155px;
+	display: none;*/
+}
+.nav{
+	position: absolute;
+	left: 500px;
+	bottom: 20px;
+}
+.nav>li{
+	text-align: center;
+	line-height: 20px;
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: #ccc;
+	cursor: pointer;
+	margin: 0 10px;
+	border-radius: 50%;   //变为圆形
+}
+.nav .active{
+	background: red;
+}
