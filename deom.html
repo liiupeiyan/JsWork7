@@ -49,8 +49,8 @@
 			var timer1 = setInterval(function(){
 				now = now-1;
 				message2.style.left = now+"px";
-				if(now <= 10){
-					now = 1390;
+				if(now <= 180){
+					now = 1525;
 					console.log(now);
 				}
 			},15)
@@ -85,7 +85,7 @@
 				});				
 			}
 		}		
-		var timer = setInterval(next,2000);
+		var timer = setInterval(next,3000);
 
 		left.onclick = prev;
 		right.onclick = next;
@@ -125,7 +125,7 @@
 		box.onmouseout = function(){
 			animate(left,{opacity:0});
 			animate(right,{opacity:0});
-			timer = setInterval(next,2000);
+			timer = setInterval(next,3000);
 		}
 	</script>
 </html>
